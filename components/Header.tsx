@@ -1,41 +1,27 @@
-'use client'
+import React from 'react'
+import { FiDownload } from 'react-icons/fi'
 
-import { FC } from 'react';
-import { motion } from 'framer-motion';
-
-interface HeaderProps {
-  activeSection: string;
-  setActiveSection: (section: string) => void;
+const Header = () => {
+  return (
+    <header className="w-full flex items-center justify-between px-8 py-4 bg-white shadow-sm">
+      {/* Left: Logo and Personal */}
+      <div className="flex items-center gap-2">
+        {/* Placeholder for logo */}
+        <p className="text-2xl font-bold text-black">Barath Muthuvel</p>
+      </div>
+      {/* Center: Navigation */}
+      <nav className="flex gap-8">
+        <a href="#about" className="font-semibold hover:text-gray-600">About Me</a>
+        <a href="#skills" className="font-semibold hover:text-gray-600">Skills</a>
+        <a href="#projects" className="font-semibold hover:text-gray-600">Project</a>
+        <a href="#contact" className="font-semibold hover:text-gray-600">Contact Me</a>
+      </nav>
+      {/* Right: Resume Button */}
+      <a href="/resume.pdf" download className="flex items-center gap-2 bg-black text-white px-5 py-2 rounded-md font-semibold hover:bg-gray-800 transition">
+        Resume <FiDownload />
+      </a>
+    </header>
+  )
 }
 
-const Header: FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
-  const navItems = ['home', 'about', 'experience', 'projects', 'skills', 'contact'];
-
-  return (
-    <header className="fixed top-0 left-0 right-0 bg-gray-800 z-50">
-      <nav className="container mx-auto px-4 py-4">
-        <ul className="flex justify-center space-x-6">
-          {navItems.map((item) => (
-            <motion.li
-              key={item}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <a
-                href={`#${item}`}
-                className={`text-lg capitalize ${
-                  activeSection === item ? 'text-blue-400' : 'text-gray-300'
-                }`}
-                onClick={() => setActiveSection(item)}
-              >
-                {item}
-              </a>
-            </motion.li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
-};
-
-export default Header;
+export default Header
