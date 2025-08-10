@@ -1,25 +1,123 @@
-import React from 'react'
-import { FiDownload } from 'react-icons/fi'
+"use client"
+import React, { useState } from 'react'
+import { Icon } from '@iconify/react'
+import Link from 'next/link'
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleDownload = () => {
+    // Open PDF in a new tab
+    window.open("/resume/BarathResume.pdf", "_blank");
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const navigationLinks = [
+    { href: "#about", text: "About Me" },
+    { href: "#skills", text: "Skills" },
+    { href: "#projects", text: "Project" },
+    { href: "#contact", text: "Contact Me" }
+  ];
+
   return (
-    <header className="w-full flex items-center justify-between px-8 py-4 bg-white shadow-sm">
-      {/* Left: Logo and Personal */}
-      <div className="flex items-center gap-2">
-        {/* Placeholder for logo */}
-        <p className="text-2xl font-bold text-black">Barath Muthuvel</p>
+    <header className="w-full bg-white sticky top-0 z-50 p-2 lg:p-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 rounded-full lg:border lg:border-gray-200 lg:shadow-lg">
+        <div className="flex items-center justify-between py-2 lg:py-4">
+          {/* Left: Logo and Personal Name */}
+          <div className="flex items-center gap-1">
+            <div className="p-2">
+              <Icon icon="devicon-plain:devicon" className="text-3xl sm:text-4xl text-black" />
+            </div>
+            <Link
+              href="https://www.linkedin.com/in/barath18/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg sm:text-xl lg:text-2xl font-bold font-work-sans-bold text-black hover:text-black transition-all duration-300 cursor-pointer hover:scale-105"
+            >
+              Barath Muthuvel
+            </Link>
+          </div>
+
+          {/* Desktop Navigation - Hidden on mobile/tablet */}
+          <nav className="hidden lg:flex gap-8">
+            {navigationLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="font-semibold text-black cursor-pointer relative px-3 py-1 rounded-lg overflow-hidden group"
+              >
+                <span className="relative z-10 group-hover:text-white font-semibold font-work-sans-semi-bold transition-colors duration-300">
+                  {link.text}
+                </span>
+                <div className="absolute inset-0 bg-black transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
+              </Link>
+            ))}
+          </nav>
+
+          {/* Desktop Resume Button - Hidden on mobile/tablet */}
+          <button
+            onClick={handleDownload}
+            className="hidden lg:flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-500 ease-out relative overflow-hidden group"
+          >
+            <span className="relative z-10">
+              Resume
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-black to-gray-800 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out" />
+            <div className="relative z-10">
+              <Icon icon="line-md:downloading-loop" className="text-2xl" />
+            </div>
+          </button>
+
+          {/* Mobile Menu Button - Visible only on mobile/tablet */}
+          <button
+            onClick={toggleMenu}
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+            aria-label="Toggle menu"
+          >
+            <Icon
+              icon={isMenuOpen ? "ci:close-big" : "ci:menu-alt-05"}
+              className="text-2xl text-black"
+            />
+          </button>
+        </div>
+
+        {/* Mobile Menu - Collapsible */}
+        <div className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}>
+          <div className="py-4 space-y-4 border-t border-gray-200">
+            {/* Mobile Navigation Links */}
+            <nav className="flex flex-col space-y-3">
+              {navigationLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="font-semibold text-black cursor-pointer px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-300"
+                >
+                  {link.text}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Mobile Resume Button */}
+            <div className="pt-2">
+              <button
+                onClick={() => {
+                  handleDownload();
+                  setIsMenuOpen(false);
+                }}
+                className="w-full flex items-center justify-center gap-3 bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-500 ease-out"
+              >
+                <span>Resume</span>
+                <Icon icon="line-md:downloading-loop" className="text-xl" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      {/* Center: Navigation */}
-      <nav className="flex gap-8">
-        <a href="#about" className="font-semibold hover:text-gray-600">About Me</a>
-        <a href="#skills" className="font-semibold hover:text-gray-600">Skills</a>
-        <a href="#projects" className="font-semibold hover:text-gray-600">Project</a>
-        <a href="#contact" className="font-semibold hover:text-gray-600">Contact Me</a>
-      </nav>
-      {/* Right: Resume Button */}
-      <a href="/resume.pdf" download className="flex items-center gap-2 bg-black text-white px-5 py-2 rounded-md font-semibold hover:bg-gray-800 transition">
-        Resume <FiDownload />
-      </a>
     </header>
   )
 }
