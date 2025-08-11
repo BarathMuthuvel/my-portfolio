@@ -99,7 +99,7 @@ const Skills = () => {
         <section className="w-full py-8 sm:py-12 md:py-16 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-center text-black mb-8 sm:mb-10 md:mb-12">
-                    My <span className='font-extrabold'>Skills</span>
+                    My <span className='font-bold'>Skills</span>
                 </h2>
 
                 <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">

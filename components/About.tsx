@@ -22,7 +22,7 @@ const About = () => {
                         {/* Right side - Text content */}
                         <div className="space-y-6">
                             <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-left text-black">
-                                About <span className='font-extrabold tracking-wide'>Me</span>
+                                About <span className='font-bold'>Me</span>
                             </h2>
 
                             <div className="space-y-4 lg:text-lg xl:text-xl text-md text-gray-700 leading-relaxed">
