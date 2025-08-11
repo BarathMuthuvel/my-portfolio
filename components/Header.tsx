@@ -23,7 +23,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white sticky top-0 z-50 p-2 lg:p-4">
+    <header className="w-full bg-white top-0 z-50 p-2 lg:p-4">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 rounded-full lg:border lg:border-gray-200 lg:shadow-lg">
         <div className="flex items-center justify-between py-2 lg:py-4">
           {/* Left: Logo and Personal Name */}

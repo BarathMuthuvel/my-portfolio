@@ -21,30 +21,21 @@ const About = () => {
 
                         {/* Right side - Text content */}
                         <div className="space-y-6">
-                            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                                About Me
+                            <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-left text-black">
+                                About <span className='font-extrabold tracking-wide'>Me</span>
                             </h2>
 
-                            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                            <div className="space-y-4 lg:text-lg xl:text-xl text-md text-gray-700 leading-relaxed">
                                 <p>
-                                    I&apos;m a passionate, self-proclaimed designer who specializes in full stack development
-                                    (React.js & Node.js). I am very enthusiastic about bringing the technical and visual
-                                    aspects of digital products to life. User experience, pixel perfect design, and writing
-                                    clear, readable, highly performant code matters to me a lot.
+                                    I&apos;m a results-oriented Senior Software Engineer driven by the challenge of turning complex problems into elegant, high-performance web solutions. With over 4 years of experience delivering enterprise-grade applications, I&apos;ve built my career on a foundation of scalable architecture, performance optimization, and seamless user experiences.
                                 </p>
 
                                 <p>
-                                    I started my journey as a web developer in 2015, and I am currently in my early thirties,
-                                    7 years after starting my web development journey. I am currently building cutting-edge
-                                    web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss,
-                                    Supabase and much more.
+                                    From modernizing large-scale e-commerce platforms to architecting reusable component libraries that cut development time by 30%, I&apos;ve consistently delivered solutions that boost efficiency, enhance user engagement, and align perfectly with business goals. My approach blends technical excellence with strategic thinking, ensuring every project not only works flawlessly but also drives measurable impact.
                                 </p>
 
                                 <p>
-                                    I am always interested in hearing about new projects and opportunities. When I&apos;m not in
-                                    full-on developer mode, you can find me hovering around on twitter or on indie hacker,
-                                    witnessing the journey of early startups or enjoying some free time. You can follow me
-                                    on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+                                    I believe great engineering is as much about collaboration and communication as it is about code. Whether mentoring junior developers, leading cross-functional initiatives, or streamlining workflows, I focus on building systems — and teams — that scale.
                                 </p>
                             </div>
                         </div>

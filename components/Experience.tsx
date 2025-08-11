@@ -3,46 +3,48 @@ import React from 'react'
 const Experience = () => {
     const experiences = [
         {
-            title: "Lead Software Engineer at Google",
-            dates: "Nov 2019 - Present",
-            description: "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide."
+            title: "Senior Software Engineer – Kenshi Labs Consultancy Pvt Ltd",
+            dates: "Jul 2024 – Present",
+            description: "At Kenshi Labs, I lead the architecture, development, and optimization of enterprise-grade web applications using React.js, Next.js, and TypeScript. Designed and implemented a reusable component library with Tailwind CSS, cutting UI build time by 30% across projects. Improved Core Web Vitals and Time to Interactive through advanced performance strategies like memoization, code-splitting, and selective re-rendering. Standardized state management with Redux Toolkit, enabling predictable and scalable applications. Actively mentor developers, lead code reviews, and align technical execution with business objectives to ensure on-time, high-quality delivery."
         },
         {
-            title: "Software Engineer at Youtube",
-            dates: "Jan 2017 - Oct 2019",
-            description: "At Youtube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability."
+            title: "Senior Frontend Developer – Independent Software Consultant",
+            dates: "Oct 2023 – Jun 2024",
+            description: "Delivered scalable, high-performance, SEO-optimized applications using React.js, Next.js, and Tailwind CSS. Conducted in-depth frontend architecture audits, reducing bundle sizes and improving maintainability. Implemented Server-Side Rendering (SSR) to boost search rankings and organic traffic. Developed modular, reusable UI components and hooks to accelerate feature delivery across multiple projects. Collaborated directly with stakeholders to translate business requirements into seamless, engaging user experiences."
         },
         {
-            title: "Junior Software Engineer at Apple",
-            dates: "Jan 2016 - Dec 2017",
-            description: "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team."
+            title: "Software Engineer UI – Mastek",
+            dates: "Jun 2021 – Oct 2023",
+            description: "Migrated legacy systems to React.js and integrated with Oracle Commerce Cloud for large-scale e-commerce platforms. Enhanced application responsiveness through caching strategies and optimized API calls, significantly improving user satisfaction. Established unit testing standards with Jest and React Testing Library, cutting production issues by 25%. Led UI refactoring initiatives, applying code-splitting and modern design patterns for faster load speeds and better scalability. Partnered with product managers, designers, and backend teams to deliver features on schedule while maintaining exceptional code quality and performance benchmarks."
         }
     ]
 
     return (
-        <section className="py-16 bg-black">
-            <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-white text-center mb-12">
-                    My Experience
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-black">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-center text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                    My <span className='font-extrabold tracking-wide'>Experience</span>
                 </h2>
-
-                <div className="space-y-6 max-w-7xl mx-auto">
+                <div className="space-y-4 sm:space-y-6 lg:space-y-8 max-w-7xl mx-auto">
                     {experiences.map((experience, index) => (
                         <div
                             key={index}
-                            className="border border-white rounded-xl p-6 hover:border-gray-400 transition-colors duration-300"
+                            className="border border-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:border-gray-400 transition-all duration-700 ease-out shadow-lg group relative overflow-hidden"
                         >
-                            <div className="flex justify-between items-start mb-4">
-                                <h3 className="text-xl font-semibold text-white">
-                                    {experience.title}
-                                </h3>
-                                <span className="text-gray-400 text-sm font-medium">
-                                    {experience.dates}
-                                </span>
+                            <div className="absolute inset-0 bg-transparent group-hover:bg-[var(--Zinc-800,#27272A)] transition-all duration-700 ease-out"></div>
+                            <div className="relative z-10">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-0 mb-3 sm:mb-4 lg:mb-6">
+                                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white group-hover:text-white transition-colors duration-700 leading-tight">
+                                        {experience.title}
+                                    </h3>
+                                    <span className="text-gray-400 text-xs sm:text-sm lg:text-base font-medium group-hover:text-gray-300 transition-colors duration-700 whitespace-nowrap">
+                                        {experience.dates}
+                                    </span>
+                                </div>
+                                <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed group-hover:text-white transition-colors duration-700">
+                                    {experience.description}
+                                </p>
                             </div>
-                            <p className="text-gray-300 leading-relaxed">
-                                {experience.description}
-                            </p>
                         </div>
                     ))}
                 </div>
