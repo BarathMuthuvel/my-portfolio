@@ -1,4 +1,54 @@
+# My Portfolio
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Contact Form Setup
+
+This portfolio includes a functional contact form that can be configured in several ways:
+
+### Option 1: EmailJS (Currently Implemented)
+
+1. **Sign up at [EmailJS](https://www.emailjs.com/)**
+2. **Create an Email Service:**
+   - Go to Email Services
+   - Choose your email provider (Gmail, Outlook, etc.)
+   - Connect your email account
+3. **Create an Email Template:**
+   - Go to Email Templates
+   - Create a new template
+   - Use variables: `{{name}}`, `{{email}}`, `{{message}}`
+4. **Get your credentials:**
+   - Service ID
+   - Template ID
+   - Public Key
+5. **Update the Contact component:**
+   - Replace `YOUR_SERVICE_ID` with your actual service ID
+   - Replace `YOUR_TEMPLATE_ID` with your actual template ID
+   - Replace `YOUR_PUBLIC_KEY` with your actual public key
+
+### Option 2: Formspree (Alternative)
+
+1. **Sign up at [Formspree](https://formspree.io/)**
+2. **Create a new form**
+3. **Replace the form action with your Formspree endpoint**
+
+### Option 3: Netlify Forms
+
+If deploying to Netlify, add `data-netlify="true"` to your form tag.
+
+### Option 4: Google Forms
+
+1. Create a Google Form
+2. Use an iframe to embed it
+3. Or redirect users to the form URL
+
+## Features
+
+- Responsive design
+- Contact form with validation
+- Social media links
+- Professional styling with Tailwind CSS
+- TypeScript support
 
 ## Getting Started
 
