@@ -11,9 +11,9 @@ const nextConfig = {
   },
 
   // Enable experimental features for better SEO
-  experimental: {
-    optimizeCss: true,
-  },
+  // experimental: {
+  //   optimizeCss: true, // Disabled - requires critters package
+  // },
 
   // Headers for better SEO and security
   async headers() {
