@@ -20,9 +20,9 @@ const Experience = () => {
     ]
 
     return (
-        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-black">
+        <section id="experience" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-black">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-center text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-sans text-center text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12">
                     My <span className='font-bold tracking-wide'>Experience</span>
                 </h2>
                 <div className="space-y-4 sm:space-y-6 lg:space-y-8 max-w-7xl mx-auto">

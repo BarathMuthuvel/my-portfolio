@@ -41,7 +41,12 @@ const manropeSemiBold = localFont({
 
 export const metadata: Metadata = {
   title: "Barath - Senior Software Engineer",
-  description: "Barath - Senior Software Engineer",
+  description: "Barath - Senior Software Engineer & Frontend Specialist",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

@@ -96,9 +96,9 @@ const Skills = () => {
     ]
 
     return (
-        <section className="w-full py-8 sm:py-12 md:py-16 bg-white">
+        <section id="skills" className="w-full py-8 sm:py-12 md:py-16 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-center text-black mb-8 sm:mb-10 md:mb-12">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal font-sans text-center text-black mb-8 sm:mb-10 md:mb-12">
                     My <span className='font-bold'>Skills</span>
                 </h2>
 

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const About = () => {
     return (
-        <section className="py-16 bg-white">
+        <section id="about" className="py-16 bg-white">
             <div className="container mx-auto px-4">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -21,11 +21,11 @@ const About = () => {
 
                         {/* Right side - Text content */}
                         <div className="space-y-6">
-                            <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-left text-black">
+                            <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-sans text-left text-black">
                                 About <span className='font-bold'>Me</span>
                             </h2>
 
-                            <div className="space-y-4 lg:text-lg xl:text-xl text-md text-gray-700 leading-relaxed">
+                            <div className="space-y-4 lg:text-lg xl:text-lg text-md text-gray-700 leading-relaxed">
                                 <p>
                                     I&apos;m a results-oriented Senior Software Engineer driven by the challenge of turning complex problems into elegant, high-performance web solutions. With over 4 years of experience delivering enterprise-grade applications, I&apos;ve built my career on a foundation of scalable architecture, performance optimization, and seamless user experiences.
                                 </p>

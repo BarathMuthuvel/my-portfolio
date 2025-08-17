@@ -44,6 +44,7 @@ const MainBanner = () => {
 
     return (
         <motion.div
+            id="home"
             className="bg-white flex flex-col lg:flex-row items-center px-4 sm:px-8 md:px-12 lg:px-16 py-8 md:py-12 relative mx-auto container"
             variants={containerVariants}
             initial="hidden"
@@ -75,14 +76,14 @@ const MainBanner = () => {
                 <div className="flex flex-col justify-center text-left">
                     {/* Main Headline */}
                     <motion.div className="mb-6 md:mb-8" variants={itemVariants}>
-                        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight mb-3 md:mb-4">
+                        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sans text-black leading-tight mb-3 md:mb-4">
                             Hi, I&apos;m{' '}
                             <span className="text-black font-extrabold" style={{
                                 WebkitTextStroke: '2px black',
                                 color: 'transparent'
-                            }}>Barath Muthuvel</span>
+                            }}>Barath</span>
                         </h1>
-                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">
+                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-sans mb-3 md:mb-4">
                             <span className="text-black">Senior Software Engineer & Frontend Specialist</span>
                         </h2>
                     </motion.div>

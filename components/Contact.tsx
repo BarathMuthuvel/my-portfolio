@@ -56,13 +56,13 @@ const Contact = () => {
     }
 
     return (
-        <section className="py-8 bg-white relative overflow-hidden">
+        <section id="contact" className="py-8 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 <div className="max-w-7xl mx-auto">
 
                     {/* Catchy Header Section */}
                     <div className="text-center mb-8 animate-fade-in-up">
-                        <h2 className="text-4xl lg:text-5xl font-normal text-black leading-tight">
+                        <h2 className="text-4xl lg:text-5xl font-normal font-sans text-black leading-tight">
                             Your <span className='font-bold'>Idea</span>, My <span className='font-bold'>Code</span>
                         </h2>
                     </div>
@@ -158,80 +158,90 @@ const Contact = () => {
                                     )}
                                 </button>
                             </form>
+
+                            {/* Social Icons - Moved from right column */}
+                            <div className="mt-6 pt-3 border-t border-gray-200">
+                                <h4 className="font-bold text-black mb-3">Connect With Me</h4>
+                                <div className="flex gap-3">
+                                    <Link
+                                        href="https://www.linkedin.com/in/barath18/"
+                                        target="_blank"
+                                        className="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group"
+                                    >
+                                        <Icon icon="mdi:linkedin" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                                    </Link>
+                                    <Link
+                                        href="https://wa.me/8072923619"
+                                        target="_blank"
+                                        className="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group"
+                                    >
+                                        <Icon icon="mdi:whatsapp" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                                    </Link>
+                                    <Link
+                                        href="mailto:baratheabs4@gmail.com"
+                                        target="_blank"
+                                        className="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group"
+                                    >
+                                        <Icon icon="mdi:email" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
 
-                        {/* Right Column - Contact Information */}
+                        {/* Right Column - Portfolio & Achievements */}
                         <div className="animate-fade-in-up animation-delay-200">
                             <div className="bg-white rounded-2xl p-5 lg:p-6 shadow-2xl border border-gray-200 h-full">
                                 <div className="mb-4">
                                     <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4">
-                                        <Icon icon="mdi:rocket-launch" className="w-6 h-6 text-white" />
+                                        <Icon icon="mdi:trophy" className="w-6 h-6 text-white" />
                                     </div>
                                     <h3 className="text-2xl font-bold font-sans text-black mb-3">
-                                        Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-700">Vision</span>
+                                        Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-700">Choose Me</span>
                                     </h3>
                                     <p className="text-gray-600 leading-relaxed">
-                                        From concept to deployment, I bring your ideas to life with clean, efficient code and stunning user experiences.
+                                        Proven track record of delivering exceptional results with cutting-edge technologies and innovative solutions.
                                     </p>
                                 </div>
 
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group">
                                         <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                                            <Icon icon="mdi:lightning-bolt" className="w-5 h-5 text-white" />
+                                            <Icon icon="mdi:code-braces" className="w-5 h-5 text-white" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-black font-sans mb-1">Lightning Fast</h4>
-                                            <p className="text-sm text-gray-600">Optimized performance and quick development cycles</p>
+                                            <h4 className="font-bold text-black font-sans mb-1">Full-Stack Expertise</h4>
+                                            <p className="text-sm text-gray-600">React, Next.js, Node.js, TypeScript & modern web technologies</p>
                                         </div>
                                     </div>
 
                                     <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group">
                                         <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                                            <Icon icon="mdi:shield-check" className="w-5 h-5 text-white" />
+                                            <Icon icon="mdi:rocket" className="w-5 h-5 text-white" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-black font-sans mb-1">Rock Solid</h4>
-                                            <p className="text-sm text-gray-600">Reliable, scalable, and maintainable solutions</p>
+                                            <h4 className="font-bold text-black font-sans mb-1">Portfolio Success</h4>
+                                            <p className="text-sm text-gray-600">Multiple successful projects including specialized platforms & e-commerce solutions</p>
                                         </div>
                                     </div>
 
                                     <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group">
                                         <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                                            <Icon icon="mdi:palette" className="w-5 h-5 text-white" />
+                                            <Icon icon="mdi:clock-fast" className="w-5 h-5 text-white" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-black font-sans mb-1">Beautiful Design</h4>
-                                            <p className="text-sm text-gray-600">Stunning visuals that users love to interact with</p>
+                                            <h4 className="font-bold text-black font-sans mb-1">Fast Delivery</h4>
+                                            <p className="text-sm text-gray-600">Quick turnaround times without compromising on quality & performance</p>
                                         </div>
                                     </div>
-                                </div>
 
-                                {/* Contact Methods */}
-                                <div className="mt-4 pt-6 border-t border-gray-200">
-                                    <h4 className="font-bold text-black mb-3">Connect With Me</h4>
-                                    <div className="flex gap-3">
-                                        <Link
-                                            href="https://www.linkedin.com/in/barath18/"
-                                            target="_blank"
-                                            className="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group"
-                                        >
-                                            <Icon icon="mdi:linkedin" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                                        </Link>
-                                        <Link
-                                            href="https://wa.me/8072923619"
-                                            target="_blank"
-                                            className="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group"
-                                        >
-                                            <Icon icon="mdi:whatsapp" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                                        </Link>
-                                        <Link
-                                            href="mailto:baratheabs4@gmail.com"
-                                            target="_blank"
-                                            className="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group"
-                                        >
-                                            <Icon icon="mdi:email" className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                                        </Link>
+                                    <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group">
+                                        <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                            <Icon icon="mdi:headphones" className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-black font-sans mb-1">24/7 Support</h4>
+                                            <p className="text-sm text-gray-600">Ongoing maintenance & support for all your development needs</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

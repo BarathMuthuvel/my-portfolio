@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { FiExternalLink } from 'react-icons/fi'
+import { Icon } from '@iconify/react'
 import brma from '../public/images/brma.jpg'
 import kenshilabs from '../public/images/kenshilabs.jpg'
 import specialized from '../public/images/specialized.png'
@@ -48,10 +48,10 @@ const Projects = () => {
     ]
 
     return (
-        <div className="bg-black min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div id="projects" className="bg-black min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Section Title */}
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-center text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-sans text-center text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12">
                     My <span className='font-bold tracking-wide'>Projects</span>
                 </h2>
 
@@ -78,7 +78,7 @@ const Projects = () => {
                                 <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">{project.title}</h3>
                                 <p className="text-[#71717A] text-sm sm:text-base font-sans leading-relaxed">{project.description}</p>
                                 <div className="flex items-center gap-2 text-white transition-colors cursor-pointer">
-                                    <FiExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
+                                    <Icon icon="mdi:external-link" className="w-4 h-4 sm:w-5 sm:h-5" />
                                     <Link href={project.link} target='_blank' className="text-sm font-medium">View Project</Link>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ const Projects = () => {
                                         <h3 className="text-3xl font-bold text-white">{project.title}</h3>
                                         <p className="text-[#71717A] text-base font-sans leading-relaxed">{project.description}</p>
                                         <div className="flex items-center gap-2 text-white transition-colors cursor-pointer">
-                                            <FiExternalLink className="w-5 h-5" />
+                                            <Icon icon="mdi:external-link" className="w-5 h-5" />
                                             <Link href={project.link} target='_blank' className="text-sm font-medium">View Project</Link>
                                         </div>
                                     </>
@@ -123,7 +123,7 @@ const Projects = () => {
                                         <h3 className="text-3xl font-bold text-white">{project.title}</h3>
                                         <p className="text-[#71717A] text-base leading-relaxed font-sans">{project.description}</p>
                                         <div className="flex items-center gap-2 text-white transition-colors cursor-pointer">
-                                            <FiExternalLink className="w-5 h-5" />
+                                            <Icon icon="mdi:external-link" className="w-5 h-5" />
                                             <Link href={project.link} target='_blank' className="text-sm font-medium">View Project</Link>
                                         </div>
                                     </>
