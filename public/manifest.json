@@ -1,0 +1,55 @@
+{
+    "name": "Barath Portfolio - Senior Software Engineer",
+    "short_name": "Barath Portfolio",
+    "description": "Professional portfolio of Barath, Senior Software Engineer specializing in React.js, Next.js, and modern web development",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "categories": [
+        "portfolio",
+        "professional",
+        "technology"
+    ],
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "72x72",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "96x96",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "144x144",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "192x192",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "512x512",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+        }
+    ]
+}

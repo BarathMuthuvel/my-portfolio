@@ -74,8 +74,8 @@ const Projects = () => {
 
                             {/* Project Content */}
                             <div className="space-y-4 sm:space-y-6">
-                                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">0{project.id}</div>
-                                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">{project.title}</h3>
+                                <div className="text-4xl sm:text-5xl md:text-6xl font-bold font-sans text-white">0{project.id}</div>
+                                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold font-sans text-white">{project.title}</h3>
                                 <p className="text-[#71717A] text-sm sm:text-base font-sans leading-relaxed">{project.description}</p>
                                 <div className="flex items-center gap-2 text-white transition-colors cursor-pointer">
                                     <Icon icon="mdi:external-link" className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -103,8 +103,8 @@ const Projects = () => {
                                 ) : (
                                     // Content on left for even IDs
                                     <>
-                                        <div className="text-6xl font-bold text-white">0{project.id}</div>
-                                        <h3 className="text-3xl font-bold text-white">{project.title}</h3>
+                                        <div className="text-6xl font-bold font-sans text-white">0{project.id}</div>
+                                        <h3 className="text-3xl font-bold font-sans text-white">{project.title}</h3>
                                         <p className="text-[#71717A] text-base font-sans leading-relaxed">{project.description}</p>
                                         <div className="flex items-center gap-2 text-white transition-colors cursor-pointer">
                                             <Icon icon="mdi:external-link" className="w-5 h-5" />

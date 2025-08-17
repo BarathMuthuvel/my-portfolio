@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /resume/BarathResume.pdf
+
+# Sitemaps
+Sitemap: https://thebarath.com/sitemap.xml
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
