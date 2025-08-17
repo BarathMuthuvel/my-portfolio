@@ -20,7 +20,7 @@ const MyTestimonial = () => {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Section Title */}
                 <div className="text-center mb-8 sm:mb-12 md:mb-16">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-sans text-center text-black mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                    <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-normal font-sans text-center text-black mb-6 sm:mb-8 md:mb-10 lg:mb-12">
                         My <span className='font-bold'>Testimonials</span>
                     </h2>
                 </div>

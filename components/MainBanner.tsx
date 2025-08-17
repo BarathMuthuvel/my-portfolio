@@ -45,7 +45,7 @@ const MainBanner = () => {
     return (
         <motion.div
             id="home"
-            className="bg-white flex flex-col lg:flex-row items-stretch px-3 sm:px-6 md:px-12 lg:px-16 py-6 sm:py-8 md:py-6 relative mx-auto container overflow-hidden"
+            className="bg-white flex flex-col lg:flex-row items-stretch px-3 sm:px-6 md:px-12 lg:px-16 py-0 sm:py-8 md:py-6 relative mx-auto container overflow-hidden"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -77,9 +77,9 @@ const MainBanner = () => {
                 <div className="absolute top-1/3 left-1 w-6 h-6 sm:w-8 sm:h-8 bg-gray-900 rounded-full opacity-10 blur-lg"></div>
 
                 {/* Text Content */}
-                <div className="flex flex-col justify-center text-center sm:text-left relative z-10 max-w-full overflow-hidden">
+                <div className="flex flex-col justify-center text-left relative z-10 max-w-full overflow-hidden">
                     {/* Status Badge */}
-                    <motion.div className="mb-4 sm:mb-3 flex justify-center sm:justify-start" variants={itemVariants}>
+                    <motion.div className="mb-4 sm:mb-3 flex justify-start" variants={itemVariants}>
                         <div className="inline-flex items-center gap-2 bg-white border-2 border-black rounded-full px-4 py-2 sm:px-3 sm:py-1.5 max-w-fit shadow-sm">
                             <div className="w-2 h-2 bg-black rounded-full animate-pulse"></div>
                             <span className="text-sm sm:text-xs font-medium text-black">Available for new opportunities</span>
@@ -108,7 +108,7 @@ const MainBanner = () => {
                         <h2 className="text-base sm:text-base md:text-lg lg:text-xl font-semibold font-sans text-gray-700 leading-relaxed mb-3 sm:mb-2 break-words">
                             Crafting Scalable, High-Performance Web Applications
                         </h2>
-                        <div className="flex flex-wrap gap-2 sm:gap-2 mb-2 sm:mb-2 max-w-full justify-center sm:justify-start">
+                        <div className="flex flex-wrap gap-2 sm:gap-2 mb-2 sm:mb-2 max-w-full justify-start">
                             {['React.js', 'Next.js', 'TypeScript', 'Node.js'].map((tech) => (
                                 <span key={tech} className="inline-flex items-center px-3 py-1 sm:px-2.5 sm:py-1 bg-white text-black text-sm sm:text-xs font-medium rounded-md border-2 border-black hover:bg-black hover:text-white transition-colors">
                                     {tech}
@@ -137,7 +137,7 @@ const MainBanner = () => {
 
                     {/* About Section */}
                     <motion.div className="mb-6 sm:mb-6 md:mb-8 max-w-full" variants={itemVariants}>
-                        <p className="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed break-words text-center sm:text-left">
+                        <p className="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed break-words text-left">
                             I help startups and enterprises transform ideas into powerful, high-performing digital products. Specializing in scalable architecture, lightning-fast performance, and pixel-perfect design systems.{' '}
                             <span className="font-semibold text-black">My code doesn&apos;t just work — it converts, scales, and delights users.</span>
                         </p>
@@ -146,7 +146,7 @@ const MainBanner = () => {
 
                 {/* CTA Buttons - Bottom */}
                 <motion.div
-                    className="flex flex-col items-center sm:items-start sm:flex-row gap-4 sm:gap-3 justify-center sm:justify-start mt-6 sm:mt-auto relative z-10 max-w-full"
+                    className="flex flex-col items-start sm:flex-row gap-4 sm:gap-3 justify-start mt-6 sm:mt-auto relative z-10 max-w-full"
                     variants={itemVariants}
                 >
                     {/* Primary CTA */}
@@ -164,7 +164,7 @@ const MainBanner = () => {
                     </motion.a>
 
                     {/* Social Icons */}
-                    <div className="flex gap-3 sm:gap-2 items-center justify-center sm:justify-start">
+                    <div className="flex gap-3 sm:gap-2 items-center justify-start">
                         {/* LinkedIn */}
                         <motion.a
                             href="https://www.linkedin.com/in/barath18"

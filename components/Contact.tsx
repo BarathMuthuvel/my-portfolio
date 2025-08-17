@@ -62,7 +62,7 @@ const Contact = () => {
 
                     {/* Catchy Header Section */}
                     <div className="text-center mb-8 animate-fade-in-up">
-                        <h2 className="text-4xl lg:text-5xl font-normal font-sans text-black leading-tight">
+                        <h2 className="text-3xl lg:text-5xl font-normal font-sans text-black leading-tight">
                             Your <span className='font-bold'>Idea</span>, My <span className='font-bold'>Code</span>
                         </h2>
                     </div>
