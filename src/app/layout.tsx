@@ -42,7 +42,7 @@ const manropeSemiBold = localFont({
 
 export const metadata: Metadata = {
   title: "Barath - Senior Software Engineer & Frontend Specialist",
-  description: "Barath - Senior Software Engineer & Frontend Specialist from Bangalore, India. Expert in React.js, Next.js, Node.js, TypeScript with 5+ years experience. Specialized in e-commerce development, B2B marketplaces, responsive web design & SEO optimization. View portfolio showcasing enterprise applications, custom web solutions & scalable projects.",
+  description: "Barath - Senior Software Engineer & Frontend Specialist from Bangalore, India. Expert in React.js, Next.js, Node.js, TypeScript with 4+ years experience. Specialized in e-commerce development, B2B marketplaces, responsive web design & SEO optimization. View portfolio showcasing enterprise applications, custom web solutions & scalable projects.",
   keywords: [
     // Primary Role Keywords
     "Senior Software Engineer",
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     "Database Design",
 
     // Experience Keywords
-    "5+ Years Experience",
+    "4+ Years Experience",
     "Enterprise Applications",
     "Scalable Web Solutions",
     "Agile Development",
@@ -137,7 +137,7 @@ export const metadata: Metadata = {
     url: 'https://thebarath.com',
     siteName: 'Barath Portfolio',
     title: 'Barath - Senior Software Engineer & Frontend Specialist',
-    description: 'Barath - Senior Software Engineer from Bangalore, India. Expert in React.js, Next.js, Node.js with 5+ years experience. Specialized in e-commerce, B2B marketplaces & responsive web design. View portfolio of enterprise applications & scalable web solutions.',
+    description: 'Barath - Senior Software Engineer from Bangalore, India. Expert in React.js, Next.js, Node.js with 4+ years experience. Specialized in e-commerce, B2B marketplaces & responsive web design. View portfolio of enterprise applications & scalable web solutions.',
     images: [
       {
         url: '/images/bannerperson.png',
@@ -153,7 +153,7 @@ export const metadata: Metadata = {
     // site: '@your-twitter-handle', // TODO: Add your actual Twitter handle when available
     // creator: '@your-twitter-handle', // TODO: Add your actual Twitter handle when available
     title: 'Barath - Senior Software Engineer & Frontend Specialist',
-    description: 'Senior Software Engineer from Bangalore, India. Expert in React.js, Next.js, Node.js with 5+ years experience. Specialized in e-commerce & B2B marketplace development.',
+    description: 'Senior Software Engineer from Bangalore, India. Expert in React.js, Next.js, Node.js with 4+ years experience. Specialized in e-commerce & B2B marketplace development.',
     images: ['/images/bannerperson.png'],
   },
   icons: {

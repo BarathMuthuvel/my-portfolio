@@ -43,7 +43,8 @@ const About = () => {
                                     <div className="w-8 sm:w-12 h-1 bg-black rounded-full"></div>
                                     <span className="text-xs sm:text-sm font-semibold text-gray-600 tracking-wider uppercase">Get to know me</span>
                                 </div>
-                                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-black leading-tight">
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-normal  font-sans text-black leading-tight">
+
                                     About{' '}
                                     <span className="font-bold relative">
                                         Me

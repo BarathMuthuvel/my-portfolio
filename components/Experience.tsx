@@ -34,7 +34,7 @@ const Experience = () => {
                             <div className="absolute inset-0 bg-transparent group-hover:bg-[var(--Zinc-800,#27272A)] transition-all duration-700 ease-out"></div>
                             <div className="relative z-10">
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-0 mb-3 sm:mb-4 lg:mb-6">
-                                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white group-hover:text-white transition-colors duration-700 leading-tight">
+                                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-sans text-white group-hover:text-white transition-colors duration-700 leading-tight">
                                         {experience.title}
                                     </h3>
                                     <span className="text-gray-400 text-xs sm:text-sm lg:text-base font-medium group-hover:text-gray-300 transition-colors duration-700 whitespace-nowrap">
