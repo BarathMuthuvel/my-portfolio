@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,8 +56,8 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white top-0 z-50 p-2 lg:p-4">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 rounded-full lg:border lg:border-gray-200 lg:shadow-lg">
-        <div className="flex items-center justify-between py-2 lg:py-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-6 rounded-full lg:border lg:border-gray-200 lg:shadow-lg">
+        <div className="flex items-center justify-between py-2 lg:py-3">
           {/* Left: Logo and Personal Name */}
           <motion.div
             className="flex items-center gap-1"
@@ -64,16 +65,20 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="p-2">
-              <Icon icon="devicon-plain:devicon" className="text-3xl sm:text-4xl text-black" />
-            </div>
             <Link
               href="https://www.linkedin.com/in/barath18/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg sm:text-xl lg:text-2xl font-bold font-sans text-black hover:text-black transition-all duration-300 cursor-pointer hover:scale-105"
             >
-              Barath
+              <Image
+                src="/images/blogo.png"
+                alt="logo"
+                width={60}
+                height={60}
+                className="rounded-full hover:scale-110 transition-transform duration-300"
+                unoptimized={true}
+              />
             </Link>
           </motion.div>
 

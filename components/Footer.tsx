@@ -3,6 +3,7 @@ import React from 'react'
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -101,9 +102,14 @@ const Footer = () => {
                             viewport={{ once: true }}
                         >
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-white rounded-xl">
-                                    <Icon icon="devicon-plain:devicon" className="text-3xl text-black" />
-                                </div>
+                                <Image
+                                    src="/images/blogo.png"
+                                    alt="logo"
+                                    width={60}
+                                    height={60}
+                                    className="rounded-full hover:scale-110 transition-transform duration-300"
+                                    unoptimized={true}
+                                />
                                 <div>
                                     <h3 className="text-2xl font-bold font-work-sans-bold">Barath</h3>
                                     <p className="text-sm">Senior Software Engineer</p>
